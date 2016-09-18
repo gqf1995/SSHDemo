@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="struts2" extends="struts-default">
+	
+		<!-- <interceptors>
+        	<interceptor name="myinter"  class="com.appjoyo.action.InterceptorAction"></interceptor>
+        </interceptors> -->
+		<!-- name="itemInfo_*"星号代表的是调用的所有方法 method="{1}"代表调用第一个方法-->
+		
+		<action name="itemInfo_*" class="ItemInfoAction" method="{1}">
+			<result name="success">/success.jsp</result>
+			<result name="error">/error.jsp</result>
+			<result name="ss">/error.jsp</result>
+		</action>
+		</package>
+</struts>
